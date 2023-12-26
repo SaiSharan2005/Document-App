@@ -1,0 +1,112 @@
+
+
+/* --------------------------------------------- by me ------------------------------- */
+
+.allDocs {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.Document {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  border: 2px solid black;
+  border-radius: 10px;
+
+}
+
+.Document p {
+  font-size: 20px;
+}
+
+.Document div p {
+  margin: 0px;
+
+}
+
+.main-Document-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.document-title,
+.document-creater,
+.document-createdAt {
+  margin: 1px 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.document-show-code,
+.document-edit-code,
+.document-show-text,
+.document-edit-text{
+  position: relative;
+
+  
+}
+.document-show {
+  width: 100%;
+  margin: auto;
+  min-height: 50px;
+
+}
+
+
+
+.edit{
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  
+}
+
+.done{
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  
+}
+.document-show-text p {
+
+  /* padding: 13px; */
+  font-size: 17px;
+}
+
+.document-show-code {
+  background-color: rgb(42, 41, 41);
+  min-height: 30px;
+   border-radius: 5px;
+  padding: auto;
+}
+
+.document-show-code p{
+  padding: 13px;
+  font-size: 15px;
+  color: aliceblue;
+}
+.document-show-code,
+.document-edit-code #inputTextArea{
+  background-color:  rgb(42, 41, 41);
+  color: antiquewhite;
+
+
+}
+#inputTextArea {
+  padding:10px;
+  width: 98%;
+  font-size: 15px;
+  min-height: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+  resize: none; /* Prevent vertical resizing */
+  overflow-x: auto; /* Enable horizontal scrollbar */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
